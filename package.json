@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/alisen/ProductTracker/issues"
   },
-  "homepage": "https://github.com/alisen/ProductTracker#readme"
+  "homepage": "https://github.com/alisen/ProductTracker#readme",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  }
 }
