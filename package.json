@@ -1,0 +1,26 @@
+{
+  "name": "producttracker",
+  "version": "1.0.0",
+  "description": "application to track products and compare products prices when shopping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisen/ProductTracker.git"
+  },
+  "keywords": [
+    "product",
+    "tracking",
+    "shopping",
+    "price",
+    "comparision"
+  ],
+  "author": "alisen <alisene@gmail.com>",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/alisen/ProductTracker/issues"
+  },
+  "homepage": "https://github.com/alisen/ProductTracker#readme"
+}
