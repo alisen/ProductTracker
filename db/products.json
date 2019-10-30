@@ -1,0 +1,42 @@
+[
+  {
+    "productId": "FCdaMyXt",
+    "productName": "Shampoo",
+    "unit": "ml",
+    "volume": "500",
+    "price": "1,49",
+    "date": "2019-10-30T03:58:22.097Z"
+  },
+  {
+    "productId": "zK7HmgWB8",
+    "productName": "Waterfilter",
+    "unit": "piece",
+    "volume": "1",
+    "price": "31,99",
+    "date": "2019-10-30T03:58:22.097Z"
+  },
+  {
+    "productId": "SJspfLyp_",
+    "productName": "Sweetener",
+    "unit": "piece",
+    "volume": "1200",
+    "price": "0,89",
+    "date": "2019-10-30T03:58:22.097Z"
+  },
+  {
+    "productId": "P9N0G9ebV",
+    "productName": "Kefir",
+    "unit": "gr",
+    "volume": "500",
+    "price": "0,79",
+    "date": "2019-10-30T03:58:22.097Z"
+  },
+  {
+    "productId": "9WIZxZ-8Q",
+    "productName": "Tomato Sauce",
+    "unit": "gr",
+    "volume": "200",
+    "price": "0,49",
+    "date": "2019-10-30T03:58:22.097Z"
+  }
+]

@@ -1,53 +1,14 @@
-var shortId = require('shortid');
+const Database = require('./database.js');
+const qrcode = require('qrcode-terminal');
+const util = require('util')
+/* const Product = require('./product.js');
+const Shop = require('./shop.js'); */
 
-Product = class {
-    constructor(productName, unit, volume, price) {
-        this.productId = shortId.generate();
-        this.productName = productName;
-        this.unit = unit; //kg, gr, lt, ml etc..
-        this.volume = volume;
-        this.price = price;
-        this.date = new Date();
-        //console.log(this);
-    }
-}
-
-product1 = new Product('Shampoo', 'ml', '500', '1,49');
+/* product1 = new Product('Shampoo', 'ml', '500', '1,49');
 product2 = new Product('Waterfilter', 'piece', '1', '31,99');
 product3 = new Product('Sweetener', 'piece', '1200', '0,89');
 product4 = new Product('Kefir', 'gr', '500', '0,79');
 product5 = new Product('Tomato Sauce', 'gr', '200', '0,49');
-
-Shop = class {
-    constructor(shopType, shopName, location) {
-        this.shopType = shopType; // Spätkauf, Supermarket
-        this.shopName = shopName; // Edeka, Rewe, Alnatura
-        this.location = location; // Greifswalder Str. 86,  10409 Berlin
-        this.productList = [];
-        //console.log(this);
-    }
-
-    add(shop, product) {
-        this.shop = shop;
-        if (shop.productList.indexOf(product) == -1) {
-            shop.productList.push(product);
-            return;
-        }
-        console.log("Product exists. Please check the before adding it.");
-    }
-
-    count(shop) {
-        this.shop = shop;
-        console.log(shop.shopName + " " + shop.shopType + " has " + shop.productList.length + " items.");
-    }
-
-    printAllShopProducts(shop) {
-        this.shop = shop
-        shop.productList.forEach(printShopProducts);
-    }
-};
-
-printShopProducts = product => console.log(product.productId, product.productName, product.unit, product.volume, product.price);
 
 shop = new Shop();
 shop1 = new Shop('Supermarket', 'Edeka', 'Greifswalder Str. 86, 10409 Berlin');
@@ -81,3 +42,19 @@ shop.count(shop1);
 shop.count(shop2);
 shop.count(shop3);
 shop.count(shop4);
+ */
+qrcode.generate('http://alisen.xyz', {
+    small: true
+});
+
+
+//Database.save('shops.json', [shop1, shop2, shop3, shop4])
+//Database.save('products.json', [product1, product2, product3, product4, product5])
+
+
+const loadedFile = Database.load('./db/shops.json')
+console.log(util.inspect(loadedFile, false, null, true /* enable colors */ ))
+
+
+//const Database = require('./database.js')
+//console.log(Database.load('person.json').name)
