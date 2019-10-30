@@ -43,18 +43,13 @@ shop.count(shop2);
 shop.count(shop3);
 shop.count(shop4);
  */
-qrcode.generate('http://alisen.xyz', {
-    small: true
-});
-
 
 //Database.save('shops.json', [shop1, shop2, shop3, shop4])
 //Database.save('products.json', [product1, product2, product3, product4, product5])
 
+qrcode.generate('http://alisen.xyz', {
+    small: true
+});
 
 const loadedFile = Database.load('./db/shops.json')
-console.log(util.inspect(loadedFile, false, null, true /* enable colors */ ))
-
-
-//const Database = require('./database.js')
-//console.log(Database.load('person.json').name)
+console.log(util.inspect(loadedFile, false, null, true))
