@@ -4,7 +4,7 @@ const Product = require('./product')
 
 module.exports = class Shop {
     constructor(shopType, shopName, location, products = []) {
-        this.id = shortId.generate();
+        this.id = shortId.generate()
         this.shopType = shopType // Spätkauf, Supermarket
         this.shopName = shopName // Edeka, Rewe, Alnatura
         this.location = location // Greifswalder Str. 86,  10409 Berlin

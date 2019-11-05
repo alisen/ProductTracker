@@ -1,5 +1,4 @@
 const fs = require('fs')
-//const prettyJSON = require("@slimio/pretty-json");
 
 module.exports = class Service {
   constructor(model, dbPath) {
@@ -22,7 +21,6 @@ module.exports = class Service {
 
         const items = JSON.parse(file).map(this.model.create)
 
-        //const prettyItems = prettyJSON(items)
         resolve(items)
       })
     })

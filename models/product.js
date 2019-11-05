@@ -2,7 +2,7 @@ const shortId = require('shortid');
 
 module.exports = class Product {
     constructor(productName, unit, volume, price) {
-        this.id = shortId.generate();
+        this.id = shortId.generate()
         this.productName = productName;
         this.unit = unit; //kg, gr, lt, ml etc..
         this.volume = volume;
